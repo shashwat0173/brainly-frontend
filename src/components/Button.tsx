@@ -14,7 +14,8 @@ const variantClasses = {
   secondary: "bg-[#d9ddee] text-[#7164c0]",
 };
 
-const defaultStyles = "px-4 py-2 rounded-md font-light flex items-center";
+const defaultStyles =
+  "px-4 py-2 rounded-md font-light flex items-center hover:cursor-pointer";
 
 export function Button({
   variant,
@@ -42,4 +43,3 @@ export function Button({
     </button>
   );
 }
-

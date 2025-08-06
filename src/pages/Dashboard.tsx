@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */ // temporary solution
+
 import { useEffect, useState } from "react";
 import { Button } from "../components/Button";
 import { Card } from "../components/Card";
@@ -14,8 +16,10 @@ export function Dashboard() {
   const { contents, refresh } = useContent();
 
   useEffect(() => {
-    refresh();
-  }, [modalOpen, refresh]);
+    if (!modalOpen) {
+      refresh();
+    }
+  }, [modalOpen]);
 
   return (
     <div>

@@ -58,7 +58,7 @@ export function CreateContentModal({
               <Input reference={linkRef} placeholder="Link" />
             </div>
             <div>
-              <h1>Type</h1>
+              <h1 className="text-center">Type</h1>
               <div className="flex gap-1 justify-center pb-2">
                 <Button
                   text="Youtube"
